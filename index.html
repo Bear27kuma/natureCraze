@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nature Craze</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header & Navigation -->
+  <header id="home">
+    <div class="menu">
+      <span class="bar"></span>
+    </div>
+    <nav class="nav">
+      <a href="#"><img src="images/logo.png" alt="logo" id="logo"></a>
+      <div class="overlay">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-text">
+      <h1>Welcome</h1>
+      <h2>Nature Craze</h2>
+      <div class="main-btn">
+        <a href="#shop">Explore</a>
+        <div class="bdr bdr1"></div>
+        <div class="bdr bdr2"></div>
+        <div class="bdr bdr3"></div>
+        <div class="bdr bdr4"></div>
+      </div>
+    </div>
+  </header>
+
+<!-- Our Shop -->
+  <section class="our-shop" id="shop">
+    <div class="container">
+      <div class="center add-padding-right">
+        <h1 class="custom-font">About</h1>
+        <h2 class="custom-font-secondary">Our Shop</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem temporibus quis libero vitae iusto asperiores dicta quos! Blanditiis quas, perspiciatis explicabo facere, ab facilis eveniet, incidunt assumenda deserunt quos quam?</p>
+        <a href="#" class="btn btn-info">Learn More</a>
+      </div>
+      <div class="store add-flex"></div>
+    </div>
+  </section>
+
+<!-- Fresh Ingredients -->
+  <section class="fresh-ingredients between-sec">
+    <h1 class="custom-font">Fresh</h1>
+    <h2 class="custom-font-secondary between-sec-color">Ingredients</h2>
+  </section>
+
+<!-- Our Menu -->
+  <section class="our-menu" id="menu">
+    <div class="container">
+      <div class="center second">
+        <h1 class="custom-font">Discover</h1>
+        <h2 class="custom-font-secondary">Our Menu</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quidem unde recusandae, cumque architecto inventore! Temporibus, delectus nobis aperiam necessitatibus, cumque assumenda enim molestiae adipisci non, ratione totam perferendis soluta?</p>
+        <a href="#" class="btn btn-info">Full Menu</a>
+      </div>
+      <div class="image-group add-flex add-padding-right first">
+        <img src="images/smoothie1.jpg" alt="smoothie1">
+        <img src="images/smoothie2.jpg" alt="smoothie2">
+        <img src="images/smoothie3.jpg" alt="smoothie3">
+        <img src="images/smoothie4.jpg" alt="smoothie4">
+      </div>
+    </div>
+  </section>
+
+<!-- All Smoothies -->
+  <section class="all-smoothies between-sec">
+    <h1 class="custom-font">Charmer</h1>
+    <h2 class="custom-font-secondary between-sec-color">All Smoothies, All Fun</h2>
+  </section>
+
+<!-- Contact Us -->
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="center add-padding-right">
+        <h1 class="custom-font">Contact</h1>
+        <h2 class="custom-font-secondary">Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolores eveniet facere pariatur, quod error! Ullam voluptatum, repudiandae aspernatur numquam modi consequuntur ipsam voluptates eum cum officia excepturi nulla debitis?</p>
+      </div>
+      <div class="form-container add-flex">
+        <form action="">
+          <input type="text" class="input" placeholder="Full Name" name="name" required>
+          <input type="text" class="input" placeholder="Email" name="email" required>
+          <textarea name="message" class="text-area" placeholder="What can we help you with?" required></textarea>
+          <input type="submit" class="input btn btn-submit">
+        </form>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+  <footer>
+    <div class="locations">
+      <h4>Locations</h4>
+      <div class="location">
+        <h5>700 Smoothie Rd <br />
+            Brooklyn, NY - 12121
+        </h5>
+      </div>
+    </div>
+    <div class="hours">
+      <h4>Hours</h4>
+      <div class="days">
+        <h5>Monday - Saturday <br />
+            9:30am - 8:00pm
+        </h5>
+      </div>
+    </div>
+  </footer>
+
+<!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.menu').on('click', function() {
+        $(this).toggleClass('clicked');
+        $('.overlay').toggleClass('menu-open');
+      });
+
+      $('.nav a').on('click', function() {
+        $('.menu').removeClass('clicked');
+        $('.overlay').removeClass('menu-open');
+      });
+    });
+  </script>
+</body>
+</html>
